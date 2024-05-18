@@ -1,43 +1,61 @@
-# Fyle Frontend Challenge
+Fyle Frontend development challenge
+Hosted Link : 
 
-## Who is this for?
+Table of Contents
+Prerequisites
+Installation
+Running the Application
+Running Unit Tests
+Assumptions
+External Packages Used
+Prerequisites
+Before running the application and unit tests, make sure you have the following prerequisites installed on your system:
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
+Node.js: The runtime environment for running Angular applications.
+Angular CLI: The command-line interface for Angular applications.
+Installation
+Clone the GitHub repository to your local machine:
 
-## Why work at Fyle?
+git clone:- https://github.com/ashu1230/fyle-internship-challenge-23/tree/master
+Navigate to the project's root directory:
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
+cd fyle-internship-challenge-23
+Install the project dependencies using npm:
 
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
+npm install
+Running the Application
+To run the GitHub User Search Application, follow these steps:
 
-## Challenge outline
+Ensure you have completed the installation steps as mentioned above.
 
-This challenge involves implementing application using github api. 
+Open a terminal and navigate to the project's root directory if you're not already there.
 
-The services that you need to use are already implemented - check out ApiService.
+Run the following command to start the application:
 
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
+ng serve
+The application should now be running locally. Open your web browser and access the app at http://localhost:4200/.
 
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
+Running Unit Tests
+alt text alt text
 
-## What happens next?
+The assignment requires unit tests with 100% code coverage for at least one component and one service. To run the unit tests, use the following commands:
 
-You will hear back within 48 hours from us via email.
+For the service unit test:
 
-## Installation
+ng test --include=/api.service.spec.ts
+For the component unit test:
 
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
+ng test --include=/app.component.spec.ts
+Ensure that your unit tests achieve 100% code coverage, and you can view the code coverage report after running the tests.
 
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+Assumptions
+Please note the following assumptions made during the development of this assignment:
 
-## Development server
+The assignment focuses on searching for GitHub users, displaying user details, and listing their repositories.
+The application assumes an internet connection is available to fetch data from the GitHub API.
+External Packages Used
+The assignment uses the following external packages to enhance functionality and development:
 
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Further help
-
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+NgxPaginationModule: Used for implementing pagination in the user repositories list.
+NgxSkeletonLoaderModule: Used for providing skeleton loading animations to improve the user experience.
+Please make sure to install these packages during the installation process, as mentioned above.
